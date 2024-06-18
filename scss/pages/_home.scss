@@ -56,8 +56,6 @@
 
          &__main-button {
             @include main-button;
-
-         
          }
       }
    }
@@ -97,7 +95,6 @@ a {
          justify-content: space-between;
          margin-right: 0;
          background-color: #f6f6f6;
-         width: 300px;
          height: 32px;
          padding: 10px 10px 15px 0;
          border-radius: 20px;
@@ -164,8 +161,6 @@ h2 {
       padding-top: 5px;
    }
 }
-
-
 
 //CARTE 1 LA PALETTE DU GOUT//
 .containercard {
