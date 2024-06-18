@@ -1,0 +1,68 @@
+//mixin du bouton explorer//
+
+@mixin main-button {
+   cursor: help;
+   color: $white-color;
+   background-color: $main-bg-color;
+   background: linear-gradient(180deg, $main-bg-color 0%, $main-bg-color2 100%);
+   box-shadow: 1px 11px 14px 0 rgba(130, 130, 130, 0.38);
+   font-family: 'roboto';
+   border-radius: 50px;
+   width: 218px;
+   border: none;
+   height: 50px;
+   margin-top: 35px;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   transition: opacity 250ms, transform 250ms ease-in-out;
+   &:hover {
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 40);
+      opacity: 0.85;
+      transition: all 250ms ease-in-out;
+      transform: scale(1.05);
+      cursor: pointer;
+   }
+}
+
+//MIXIN CARDS//
+
+@mixin card-styles {
+   border-radius: 20px;
+   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+@mixin title-styles {
+   font-size: 18px;
+   margin-left: 10px;
+   margin-top: 12px;
+}
+
+//MIXIN HEART//
+
+@mixin logo-heart {
+   position: relative;
+   padding-right: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin premier {
+   position: absolute;
+   color: $black-color;
+}
+
+@mixin second {
+   position: absolute;
+   opacity: 0;
+   font-size: 29px;
+   margin-top: 15px;
+   background: linear-gradient(180deg, $main-bg-color 0%, $main-bg-color2 97%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 250ms ease-in-out;
+}

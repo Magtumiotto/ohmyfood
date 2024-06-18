@@ -1,0 +1,391 @@
+//HEADER OHMYFOOD//
+
+.container {
+   padding-left: 0px;
+   margin: 0px;
+   &__header {
+      display: flex;
+      text-align: center;
+
+      &__logoohmyfood {
+         margin: auto;
+         margin-top: 14px;
+         height: 36px;
+      }
+   }
+}
+
+//BARRE DE RECHERCHE HEADER//
+.locationitem {
+   background-color: #eaeaea;
+   box-shadow: $box-color;
+   padding: 13px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   margin-top: 8px;
+   font-size: 13px;
+}
+
+//MAIN TITRE BOUTTON//
+.section-location {
+   padding: 25px 56px;
+   background: whitesmoke;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   &__title-resa {
+      font-size: 23px;
+      padding: 8px;
+      font-weight: 700;
+      line-height: 25px;
+
+      &__text-resto {
+         font-size: 15px;
+         font-weight: 300;
+         color: #353535;
+         margin-top: 10px;
+         width: 101%;
+
+         &__main-button {
+            @include main-button;
+
+         
+         }
+      }
+   }
+}
+
+//MAIN FONCTIONNEMENT 3 BOUTONS//
+.fa-solid {
+   color: black;
+   font-size: 20px;
+}
+
+p {
+   font-size: 16px;
+}
+
+a {
+   margin-left: 0px;
+   margin-right: 0px;
+   font-size: 14px;
+}
+
+.title-location-2 {
+   margin-top: 30px;
+   margin-left: 0px;
+   margin-right: 20px;
+
+   &__container2 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 23px;
+
+      &__container3 {
+         display: flex;
+         align-items: center;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         margin-right: 0;
+         background-color: #f6f6f6;
+         width: 300px;
+         height: 32px;
+         padding: 10px 10px 15px 0;
+         border-radius: 20px;
+         position: relative;
+         margin-bottom: 45px;
+         font-weight: 700;
+         box-shadow: 0px 4px 15px 0px #00000026;
+
+         &__numbers {
+            width: 30px;
+            height: 30px;
+            margin-left: -8px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding: 1px;
+            background-color: #9356dc;
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+.fas {
+   padding-right: 0;
+   margin-left: 2px;
+   color: #7e7e7e;
+}
+
+.fa-mobile-alt .fa-list-ul .fa-store {
+   display: flex;
+   flex-direction: row;
+}
+
+.container3 a {
+   display: flex;
+   flex-direction: row;
+   margin-left: 10px;
+   margin-right: 28px;
+   font-size: 14px;
+}
+
+.container3 p {
+   margin-left: 0;
+   margin-right: 15px;
+}
+//TITRES//
+
+h2 {
+   margin-left: 25px;
+   margin-top: 20px;
+}
+
+//MAIN 4 CARTES RESTAURANT//
+.container4 {
+   flex-wrap: wrap;
+   background-color: #f6f6f6;
+   height: 1110px;
+
+   &__title-location-3 {
+      padding-top: 5px;
+   }
+}
+
+
+
+//CARTE 1 LA PALETTE DU GOUT//
+.containercard {
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+
+   &__cardLeft1 {
+      @include card-styles;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      height: 220px;
+      margin-left: 18px;
+      margin-top: 30px;
+      box-sizing: border-box;
+
+      &__direction1 {
+         &__image-seize {
+            width: 100%;
+            height: 140px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 0;
+            margin-left: 0;
+
+            &__card-content {
+               display: flex;
+
+               &__card-title {
+                  @include title-styles;
+
+                  &__card-subtitle {
+                     margin-top: 5px;
+                     margin-left: 10px;
+
+                     &__container-heart {
+                        display: flex;
+
+                        .far {
+                           margin-left: 111px;
+                           margin-top: 17px;
+                           font-size: 30px;
+                           cursor: pointer;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.new {
+   color: #008766;
+   background-color: $filter-bg-color;
+   border: 5px solid $filter-bg-color;
+   border-radius: 5px;
+   position: absolute;
+   right: 12px;
+   top: 12px;
+   width: 20%;
+   text-align: center;
+}
+
+// CARTE 2 LA NOTE ENCHANTEE//
+.containercard {
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+
+   &__cardLeft2 {
+      @include card-styles;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      height: 220px;
+      margin-left: 18px;
+      margin-top: 30px;
+      box-sizing: border-box;
+
+      &__direction2 {
+         &__image-seize {
+            width: 100%;
+            height: 140px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 0;
+            margin-left: 0;
+
+            &__card-content {
+               display: flex;
+
+               &__card-title {
+                  @include title-styles;
+
+                  &__card-subtitle {
+                     margin-top: 5px;
+                     margin-left: 10px;
+
+                     &__container-heart {
+                        display: flex;
+
+                        .far {
+                           margin-left: 109px;
+                           margin-top: 17px;
+                           font-size: 30px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+//CARTE 3 A LA FRANCAISE//
+.containercard {
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+
+   &__cardLeft3 {
+      @include card-styles;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      height: 220px;
+      margin-left: 18px;
+      margin-top: 30px;
+      box-sizing: border-box;
+      &__direction3 {
+         &__image-seize {
+            width: 100%;
+            height: 140px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 0;
+            margin-left: 0;
+
+            &__card-content {
+               display: flex;
+
+               &__seize-title-c3 {
+                  width: 54%;
+
+                  &__card-title {
+                     @include title-styles;
+
+                     &__card-subtitle {
+                        margin-top: 5px;
+                        margin-left: 10px;
+
+                        &__container-heart {
+                           display: flex;
+
+                           .far {
+                              margin-left: 146px;
+                              margin-top: 17px;
+                              font-size: 30px;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+//CARTE 4 LE DELICE DES SENS//
+.containercard {
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+
+   &__cardLeft4 {
+      @include card-styles;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      height: 220px;
+      margin-left: 18px;
+      margin-top: 30px;
+      box-sizing: border-box;
+      &__direction4 {
+         &__image-seize {
+            width: 100%;
+            height: 140px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 0;
+            margin-left: 0;
+
+            &__card-content {
+               display: flex;
+
+               &__card-title {
+                  @include title-styles;
+
+                  &__card-subtitle {
+                     margin-top: 5px;
+                     margin-left: 10px;
+
+                     &__container-heart {
+                        display: flex;
+
+                        .far {
+                           margin-left: 109px;
+                           margin-top: 17px;
+                           font-size: 30px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
